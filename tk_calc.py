@@ -9,7 +9,7 @@ caja = tk.Entry(ventana, width=28, font='calibri 25')
 caja.grid(row=0, column=0, columnspan=999, padx=0, pady=15)
 ventana.title('Calculadora')
 def copiar():
-    
+    ventana.clipboard_clear()
     ventana.clipboard_append(caja.get())
 def insertar_op(valor):
     global i
